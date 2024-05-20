@@ -9,12 +9,13 @@ body {
 body {
     display: grid;
     height: 100vh;
-    grid-template-rows: 10% 12% 68% 10% ;
+    grid-template-rows: 10% 12% auto auto 10% ;
     grid-template-columns: 100% ;
     grid-template-areas: 
     "nav"
     "section"
     "main"
+    "aside"
     "footer"; 
 
     /* eliminar menu */
@@ -60,6 +61,17 @@ main {
 .pages {
     margin-bottom: 36px;
 }
+ /* edición input*/
+ .input {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border-radius: 12px;
+    width: 380px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 4px;
+}
 }
 }
 
@@ -67,13 +79,13 @@ main {
 @media screen and (min-width: 577px) {
     body {
         display: grid;
-        height: 100vh;
-        grid-template-rows: 10% 80% 10%;
+        grid-template-rows: 10% auto auto 5%;
         grid-template-columns: 20% 80% ;
         grid-template-areas:
           "nav section"
           "nav main"
-          "footer main";
+          "aside aside"
+          "footer footer";
 
         /* edición hamburguesa*/
     .menu {
@@ -103,7 +115,19 @@ main {
       /* edición páginas*/
     .pages {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
+    /* edición input*/
+        .input {
+        display: flex;
+        background-color: white;
+        align-items: center;
+        border-radius: 12px;
+        width: 600px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin: 4px;
+}
 }
     }
 
@@ -137,7 +161,7 @@ main {
 
 footer {
     grid-area: footer;
-    background-color: #F7F7FC;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -255,6 +279,18 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #F7F7FC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+    padding-top: 12px;
+ 
 }
 
 .rrss {
