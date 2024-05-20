@@ -1,0 +1,267 @@
+body {
+    font-family: Roboto;
+    margin: 0;
+}
+
+   /* EDICION PANTALLAS PEQUEÑAS*/
+
+@media screen and (max-width: 576px) {
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 10% 12% 68% 10% ;
+    grid-template-columns: 100% ;
+    grid-template-areas: 
+    "nav"
+    "section"
+    "main"
+    "footer"; 
+
+    /* eliminar menu */
+    .item {
+        display: none;
+    }
+    
+     /* eliminar galería */
+    .item-main {
+        display: none;
+    }
+
+    .navtotal {
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* edición logo */
+    .logo {
+        width: 12px;
+    }
+
+    /* edición elemento galería */
+    .item-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    } 
+
+     /* edición galería completa */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  /* edición páginas*/
+.pages {
+    margin-bottom: 36px;
+}
+}
+}
+
+  /* EDICION PANTALLAS GRANDES */
+@media screen and (min-width: 577px) {
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 10% 80% 10%;
+        grid-template-columns: 20% 80% ;
+        grid-template-areas:
+          "nav section"
+          "nav main"
+          "footer main";
+
+        /* edición hamburguesa*/
+    .menu {
+        display: none;
+    }
+
+          /* eliminar un elemento de la galería*/
+    .item-mobile {
+        display: none;
+    }
+    
+    /* edición galería completa*/
+    .item-main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+      /* edición páginas*/
+    .pages {
+        margin-top: 20px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+    }
+
+      /* EDICIÓN ELEMENTOS EN GENERAL*/
+
+nav {
+    grid-area: nav;
+    background-color: #E0E7FF;
+    align-items: center;
+}
+
+.navtotal {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    grid-area: section;
+    background-color: #F7F7FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+    background-image: url(./imgs/BG-main.png);
+}
+
+footer {
+    grid-area: footer;
+    background-color: #F7F7FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    font-size: 28px;
+}
+
+nav p {
+    margin: 8px;
+}
+
+section p {
+    margin: 8px;
+}
+
+nav p:hover{
+    font-weight: 600;
+}
+
+.navtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:12px
+}
+
+.barra {
+    display: flex;
+    justify-content:space-between;
+    background-color: white;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 0;
+    width: 200px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.item {
+    text-align: center;
+    margin: 28px;
+}
+
+.item-main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 16px;
+    box-shadow: 0px -7px 14px 0px rgba(12, 20, 97, 0.05), 0px 14px 28px 0px rgba(12, 20, 97, 0.07);
+    transition: background-color box-shadow 0.3s ease-out;
+}
+
+.card:hover {
+    box-shadow: none;
+    background-color: rgb(241, 244, 255);
+}
+
+img {
+    border-radius: 12px
+}
+
+h3 {
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: #5627FF;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background-color: #E0E7FF;
+    border-style: none;
+    color: #040404;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 0px;
+    margin: 2px;
+}
+
+button:hover{
+    background-color: #5627FF;
+    color: white;
+}
+
+.button:hover {
+    background-color: #1d0e53;
+    }
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rrss {
+    display: flex;
+    gap: 12px;
+}
+
+i {
+    color: #070315;
+}
+
+i:hover {
+    color:#5627FF;
+}
