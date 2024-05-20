@@ -204,8 +204,21 @@ nav p:hover{
 }
 
 .item {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 28px;
+}
+
+a {
+    text-decoration: none;
+    margin-top: 12px;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .item-main {
