@@ -27,17 +27,21 @@ body {
         display: none;
     }
 
+    /* edición nav */
+
     .navtotal {
         display: flex;
-        justify-content: center;
-    }
-    
-    /* edición logo */
-    .logo {
-        width: 12px;
+        justify-content: space-between;
+        margin-left: 32px;
+        margin-right: 32px;
     }
 
-    /* edición elemento galería */
+    /* edición logo */
+    nav img {
+        width: 40px;
+    }
+
+    /* edición producto galería */
     .item-mobile {
         display: flex;
         justify-content: center;
@@ -52,7 +56,7 @@ main {
     justify-content: space-between;
 }
 
-  /* edición páginas*/
+  /* edición botones páginas*/
 .pages {
     margin-bottom: 36px;
 }
@@ -76,6 +80,12 @@ main {
         display: none;
     }
 
+     /* edición hamburguesa*/
+    nav img {
+        width: 60px;
+        margin: 8px;
+    }
+
           /* eliminar un elemento de la galería*/
     .item-mobile {
         display: none;
@@ -93,12 +103,6 @@ main {
       /* edición páginas*/
     .pages {
         margin-top: 20px;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 8px;
     }
 }
     }
